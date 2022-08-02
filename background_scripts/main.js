@@ -666,7 +666,7 @@ window.runTests = () => open(chrome.runtime.getURL('tests/dom_tests/dom_tests.ht
 
 // Show notification on upgrade.
 (showUpgradeMessage = function() {
-  const currentVersion = Utils.getCurrentVersion();
+  const currentVersion = getCurrentVersion();
   // Avoid showing the upgrade notification when previousVersion is undefined, which is the case for new
   // installs.
   if (!Settings.has("previousVersion"))
