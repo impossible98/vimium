@@ -63,7 +63,6 @@ var HelpDialog = {
 
   show({showAllCommandDetails}) {
     $("help-dialog-title").textContent = showAllCommandDetails ? "Command Listing" : "Help";
-    $("help-dialog-version").textContent = Utils.getCurrentVersion();
 
     chrome.storage.local.get("helpPageData", ({helpPageData}) => {
       for (let group of Object.keys(helpPageData)) {
