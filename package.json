@@ -2,23 +2,17 @@
   "name": "vimium",
   "version": "1.0.0",
   "description": "Vimium - The Hacker's Browser",
-  "main": "make.js",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
   "dependencies": {
     "path": "^0.11.14",
     "puppeteer": "^3.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/philc/vimium.git"
-  },
-  "author": "Phil Crosby",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/philc/vimium/issues"
-  },
-  "homepage": "https://github.com/philc/vimium#readme"
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "@types/chrome": "^0.0.193",
+    "@types/firefox-webext-browser": "^94.0.1",
+    "dprint": "^0.30.0",
+    "husky": "^8.0.0",
+    "typescript": "^4.5.4"
+  }
 }
