@@ -178,7 +178,7 @@ td.vimiumHelpDialogTopButtons {
   width: 100%;
   text-align: right;
 }
-#helpDialogOptionsPage, #helpDialogWikiPage {
+#helpDialogWikiPage {
   font-size: 14px;
   padding-left: 5px;
   padding-right: 5px;

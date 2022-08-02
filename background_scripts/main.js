@@ -161,7 +161,7 @@ const TabOperations = {
       delete tabConfig["url"];
 
     // Firefox <57 throws an error when openerTabId is used (issue 1238314).
-    const canUseOpenerTabId = !(Utils.isFirefox() && (Utils.compareVersions(Utils.firefoxVersion(), "57") < 0));
+    const canUseOpenerTabId = !(Utils.isFirefox() && (Utils.compareVersions(firefoxVersion(), "57") < 0));
     if (canUseOpenerTabId)
       tabConfig.openerTabId = request.tab.id;
 

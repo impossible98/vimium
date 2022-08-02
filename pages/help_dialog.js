@@ -40,11 +40,6 @@ var HelpDialog = {
       this.hide();
     }, false);
 
-    document.getElementById("helpDialogOptionsPage").addEventListener("click", function(clickEvent) {
-      clickEvent.preventDefault();
-      chrome.runtime.sendMessage({handler: "openOptionsPageInNewTab"});
-    }, false);
-
     document.getElementById("toggleAdvancedCommands").
       addEventListener("click", HelpDialog.toggleAdvancedCommands.bind(HelpDialog), false);
 
